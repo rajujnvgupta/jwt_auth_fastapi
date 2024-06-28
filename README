@@ -1,5 +1,19 @@
+## create virtual environment for developement
+python -m venv fastapi-env
+
+## activate this environment on window
+fastapi-env\Scripts\activate
+
+## activate this environment on linux
+source fastapi-env/bin/activate
+
+
 ### install dependency for develpment
-pip install pymongo fastapi uvicorn
+pip install pymongo fastapi uvicorn pydantic python-jose
 
 ### start uvicorn server for develpment
 uvicorn index:app --reload
+
+
+## deactivate virtual environment
+deactivate
