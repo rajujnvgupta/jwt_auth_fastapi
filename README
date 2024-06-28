@@ -1,0 +1,5 @@
+### install dependency for develpment
+pip install pymongo fastapi uvicorn
+
+### start uvicorn server for develpment
+uvicorn index:app --reload
