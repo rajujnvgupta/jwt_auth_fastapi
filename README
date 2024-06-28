@@ -1,4 +1,4 @@
-## create virtual environment for developement
+# create virtual environment for developement
 python -m venv fastapi-env
 
 ## activate this environment on window
