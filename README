@@ -17,3 +17,27 @@ uvicorn index:app --reload
 
 ## deactivate virtual environment
 deactivate
+
+
+#signup api curl request:
+
+curl --location 'http://127.0.0.1:8000/signup' \
+--header 'Content-Type: application/json' \
+--data '{
+  "username": "rajugupta",
+  "email": "caserajgupta2021",
+   "hashed_password": "rajutmp123"
+}'
+
+#Get user is valid or not with access token ##api curl reqeust
+
+curl --location 'http://127.0.0.1:8000/users_test' \
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyYWp1Z3VwdGEiLCJleHAiOjE3MTk1NzU1NDN9.nPGLPJNKZEqqoiLx3Pix3fiJ_-XIbISCcE2A4_zJQJY'
+
+#login api curl request to get access_token
+
+curl --location 'http://127.0.0.1:8000/login' \
+--form 'username="rajugupta"' \
+--form 'password="rajutmp123"'
+
+#####
